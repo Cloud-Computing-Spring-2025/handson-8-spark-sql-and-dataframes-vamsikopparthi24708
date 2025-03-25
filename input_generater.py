@@ -16,7 +16,7 @@ age_groups = ["Teen", "Adult", "Senior"]
 countries = ["US", "UK", "Canada", "India", "Germany", "Brazil"]
 verified_status = [True, False]
 
-for user_id in range(1, 51):
+for user_id in range(0, 10):
     user = {
         "UserID": user_id,
         "Username": usernames[user_id - 1],
@@ -77,4 +77,4 @@ with open("input/posts.csv", mode="w", newline="", encoding="utf-8") as file:
     writer.writeheader()
     writer.writerows(posts_data)
 
-print("✅ Dataset generation complete: 'users.csv' and 'posts.csv' created in /input/")
+print("✅ Dataset generation complete: 'users.csv' and 'posts.csv' created in /input/")
